@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    xmlns:fab="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="현재 모드 : "
+            android:textSize="30dp"
+            android:id="@+id/textView_mode" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="자동/수동"
+            android:textSize="30dp"
+            android:id="@+id/textView_current_mode" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:text="문 열기"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        android:background="#65A0E0"
+        android:id="@+id/btn_open"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp" />
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:text="문 닫기"
+        android:background="#65A0E0"
+        android:id="@+id/btn_close"
+        android:layout_below="@+id/btn_open"
+        android:layout_alignLeft="@+id/btn_open"
+        android:layout_alignStart="@+id/btn_open" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/mode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_singleLine="true"
+        fab:menu_backgroundColor="#ccffffff"
+        fab:menu_fab_label=""
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star"
+            fab:fab_size="mini"
+            fab:fab_label="자동" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_hand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_star"
+            fab:fab_size="mini"
+            fab:fab_label="수동" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+
+
+</RelativeLayout>

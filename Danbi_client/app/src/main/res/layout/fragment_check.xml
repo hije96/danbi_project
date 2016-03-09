@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@android:color/white"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.juhyang.danbi_watering_schedule.MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:background="@drawable/son"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_son" />
+
+            <Button
+                android:background="@drawable/mon"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_mon" />
+
+            <Button
+                android:background="@drawable/tue"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_tue" />
+
+            <Button
+                android:background="@drawable/wed"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_wed" />
+
+            <Button
+                android:background="@drawable/thu"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_thr" />
+
+            <Button
+                android:background="@drawable/fri"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_fri" />
+
+            <Button
+                android:background="@drawable/sat"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_sat" />
+
+            <Button
+                android:background="@drawable/all_white"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_total" />
+        </LinearLayout>
+
+        <ListView
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="435dp"
+            android:id="@+id/listView"
+            android:focusable="true"
+            />
+
+    </LinearLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_singleLine="true"
+        fab:menu_backgroundColor="#ccffffff"
+        fab:menu_fab_label="">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            fab:fab_size="mini"
+            fab:fab_label="타이머" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            fab:fab_size="mini"
+            fab:fab_label="예약" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+</RelativeLayout>

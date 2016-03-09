@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="@android:color/white"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.juhyang.danbi_watering_schedule.AddAlarm"
+    android:id="@+id/p">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TimePicker
+            android:layout_width="wrap_content"
+            android:layout_height="276dp"
+            android:id="@+id/timePicker"
+            android:scrollbarStyle="insideInset"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/linearLayout"
+            android:layout_alignEnd="@+id/linearLayout" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_below="@+id/timePicker"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ToggleButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textOff="일"
+                android:textOn="일"
+                android:id="@+id/tB_sun" />
+            <ToggleButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textOff="월"
+                android:textOn="월"
+                android:id="@+id/tB_mon" />
+            <ToggleButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textOff="화"
+                android:textOn="화"
+                android:id="@+id/tB_tue" />
+            <ToggleButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textOff="수"
+                android:textOn="수"
+                android:id="@+id/tB_wed" />
+            <ToggleButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textOff="목"
+                android:textOn="목"
+                android:id="@+id/tB_thr" />
+            <ToggleButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textOff="금"
+                android:textOn="금"
+                android:id="@+id/tB_fri" />
+            <ToggleButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textOff="토"
+                android:textOn="토"
+                android:id="@+id/tb_sat" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:id="@+id/btn_alarm"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
